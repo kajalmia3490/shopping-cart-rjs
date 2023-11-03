@@ -21,8 +21,8 @@ const Header = () => {
   } = CartState();
 
   return (
-    <Navbar bg="dark" variant="dark" style={{ height: 80 }}>
-      <Container>
+    <Navbar className="card">
+      <Container fluid>
         <Navbar.Brand>
           <Link to="/">Random Market</Link>
         </Navbar.Brand>
@@ -45,7 +45,7 @@ const Header = () => {
         )}
         <Nav>
           <Dropdown alignRight>
-            <Dropdown.Toggle variant="success">
+            <Dropdown.Toggle variant="primary">
               <FaShoppingCart color="white" fontSize="25px" />
               <Badge>{cart.length}</Badge>
             </Dropdown.Toggle>

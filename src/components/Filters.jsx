@@ -87,7 +87,7 @@ const Filters = () => {
         />
       </span>
       <Button
-        variant="light"
+        variant="primary"
         onClick={() =>
           productDispatch({
             type: "CLEAR_FILTERS",
